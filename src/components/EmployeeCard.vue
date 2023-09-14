@@ -68,6 +68,14 @@ const cardInfoClassName = computed(() => `card__info ${props.isSelected && "sele
       background: #E0E0E0;
     }
 
+    .name,
+    .email {
+      max-width: 130px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     .name {
       color: #333;
       font-size: 14px;

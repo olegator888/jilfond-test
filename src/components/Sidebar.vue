@@ -103,11 +103,12 @@ const selectedEmployeeId = computed(() => store.state.selectedEmployeeId);
 <style lang="scss">
   .sidebar {
     flex-shrink: 0;
-    width: 320px;
+    width: 290px;
     height: 100%;
     border-right: 1px solid #E0E0E0;
     padding: 30px; 
     padding-left: 20px;
+    overflow-y: auto;
 
     &__header {
       margin-bottom: 30px;
@@ -141,13 +142,10 @@ const selectedEmployeeId = computed(() => store.state.selectedEmployeeId);
       }
 
       .list {
-        padding: 6px;
         margin-top: 8px;
-        max-height: 350px;
         display: flex;
         flex-direction: column;
         gap: 18px;
-        overflow-y: scroll;
       }
     }
   }
